@@ -27,23 +27,23 @@ local cope = Instance.new("TextButton")
 	cope.BackgroundColor3 = blak
 	cope.BorderColor3 = rede
 	cope.BorderSizePixel = 3
-	cope.Name = "Close/Open"
+	cope.Name = "Fermer/Ouvrir"
 	cope.Position = UDim2.new(0,3,0.3,380)
 	cope.Selectable = true
 	cope.Size = UDim2.new(0,300,0,20)
 	cope.ZIndex = 3
 	cope.Font = "SourceSans"
 	cope.FontSize = "Size18"
-	cope.Text = "Close"
+	cope.Text = "Fermer"
 	cope.TextColor3 = Color3.new(255,255,255)
 	cope.TextXAlignment = "Center"
 	cope.TextYAlignment = "Center"
 	cope.MouseButton1Down:connect(function()
 		if cope.Text == "Close" then
 		frame.Visible = false
-		cope.Text = "Open" else
+		cope.Text = "Ouvert" else
 		frame.Visible = true
-		cope.Text = "Close"	
+		cope.Text = "Fermer"	
 		end	
 	end)
 local page1 = Instance.new("Frame")
@@ -169,7 +169,7 @@ local title = Instance.new("TextLabel")
 	title.ZIndex = 2
 	title.Font = tef
 	title.FontSize = "Size24"
-	title.Text = "c00lgui Reborn Rc7 by v3rx"
+	title.Text = "C00lgui Reborn Rc7 par v3rx"
 	title.TextColor3 = whit
 --           inside pages        --
 local acg = Instance.new("Frame")
@@ -186,7 +186,7 @@ local sd = Instance.new("Frame")
 	sd.BackgroundColor3 = blak
 	sd.BorderColor3 = rede
 	sd.BorderSizePixel = 3
-	sd.Name = "Server Destruction"
+	sd.Name = "Destruction du Serveur"
 	sd.Position = UDim2.new(0,0,0,0)
 	sd.Size = UDim2.new(0.5,-3,1,0)
 	sd.ZIndex = 2
@@ -195,7 +195,7 @@ local gt = Instance.new("Frame")
 	gt.BackgroundColor3 = blak
 	gt.BorderColor3 = rede
 	gt.BorderSizePixel = 3
-	gt.Name = "Gear/Tools"
+	gt.Name = "Equipement/Outils"
 	gt.Position = UDim2.new(0.5,3,0,0)
 	gt.Size = UDim2.new(0.5,-3,1,0)
 	gt.ZIndex = 2
@@ -204,7 +204,7 @@ local ws = Instance.new("Frame")
 	ws.BackgroundColor3 = blak
 	ws.BorderColor3 = rede
 	ws.BorderSizePixel = 3
-	ws.Name = "Weapon Scripts"
+	ws.Name = "Scripts d'armes"
 	ws.Position = UDim2.new(0,0,0,0)
 	ws.Size = UDim2.new(0.5,-3,1,0)
 	ws.ZIndex = 2
@@ -213,7 +213,7 @@ local localp = Instance.new("Frame")
 	localp.BackgroundColor3 = blak
 	localp.BorderColor3 = rede
 	localp.BorderSizePixel = 3
-	localp.Name = "LocalPlayer"
+	localp.Name = "Joueur Local"
 	localp.Position = UDim2.new(0.5,3,0,0)
 	localp.Size = UDim2.new(0.5,-3,1,0)
 	localp.ZIndex = 2
@@ -222,7 +222,7 @@ local misc = Instance.new("Frame")
 	misc.BackgroundColor3 = blak
 	misc.BorderColor3 = rede
 	misc.BorderSizePixel = 3
-	misc.Name = "Misc"
+	misc.Name = "Divers"
 	misc.Position = UDim2.new(0,0,0,0)
 	misc.Size = UDim2.new(0.5,-3,1,0)
 	misc.ZIndex = 2
@@ -231,7 +231,7 @@ pmi = Instance.new("Frame")
 	pmi.BackgroundColor3 = blak
 	pmi.BorderColor3 = rede
 	pmi.BorderSizePixel = 3
-	pmi.Name = "Preset Music IDs"
+	pmi.Name = "ID de Musique Pre-enregistrer"
 	pmi.Position = UDim2.new(0.5,3,0,0)
 	pmi.Size = UDim2.new(0.5,-3,1,0)
 	pmi.ZIndex = 2
@@ -240,7 +240,7 @@ local psd = Instance.new("Frame")
 	psd.BackgroundColor3 = blak
 	psd.BorderColor3 = rede
 	psd.BorderSizePixel = 3
-	psd.Name = "Preset Skybox/Decal IDs"
+	psd.Name = "ID de Skybox/Decal Pre-enregistrer"
 	psd.Position = UDim2.new(0,0,0,0)
 	psd.Size = UDim2.new(0.5,-3,1,0)
 	psd.ZIndex = 2
@@ -258,7 +258,7 @@ local pgi = Instance.new("Frame")
 	pgi.BackgroundColor3 = blak
 	pgi.BorderColor3 = rede
 	pgi.BorderSizePixel = 3
-	pgi.Name = "Preset Gear IDs"
+	pgi.Name = "ID d'Equipement Pre-enregistrer"
 	pgi.Position = UDim2.new(0,0,0,0)
 	pgi.Size = UDim2.new(0.5,-3,1,0)
 	pgi.ZIndex = 2
@@ -330,11 +330,11 @@ end
 end)
 
 game.Players.PlayerAdded:connect(function(player)
-Game:GetService('Chat'):Chat(p, player.Name .. " has joined! AccountAge = " .. player.AccountAge .. " | UserID = " .. player.UserId .. " |..!", Enum.ChatColor.Red)
+Game:GetService('Chat'):Chat(p, player.Name .. " à rejoint ! AccountAge = " .. player.AccountAge .. " | ID du Joueur = " .. player.UserId .. " |..!", Enum.ChatColor.Red)
 end)
 
 game.Players.ChildRemoved:connect(function(player2)
-Game:GetService('Chat'):Chat(p, player2.Name .. " has left! AccountAge = " .. player2.AccountAge .. " | UserID = " .. player2.UserId .. " |..!", Enum.ChatColor.Red)
+Game:GetService('Chat'):Chat(p, player2.Name .. " à quitter! AccountAge = " .. player2.AccountAge .. " | UserID = " .. player2.UserId .. " |..!", Enum.ChatColor.Red)
 end)
 
 Admins.Chatted:connect(function(msg)
