@@ -27,23 +27,23 @@ local cope = Instance.new("TextButton")
 	cope.BackgroundColor3 = blak
 	cope.BorderColor3 = rede
 	cope.BorderSizePixel = 3
-	cope.Name = "Fermer/Ouvert"
+	cope.Name = "Close/Open"
 	cope.Position = UDim2.new(0,3,0.3,380)
 	cope.Selectable = true
 	cope.Size = UDim2.new(0,300,0,20)
 	cope.ZIndex = 3
 	cope.Font = "SourceSans"
 	cope.FontSize = "Size18"
-	cope.Text = "Fermer"
+	cope.Text = "Close"
 	cope.TextColor3 = Color3.new(255,255,255)
 	cope.TextXAlignment = "Center"
 	cope.TextYAlignment = "Center"
 	cope.MouseButton1Down:connect(function()
-		if cope.Text == "Fermer" then
+		if cope.Text == "Close" then
 		frame.Visible = false
-		cope.Text = "Ouvrir" else
+		cope.Text = "Open" else
 		frame.Visible = true
-		cope.Text = "Fermer"	
+		cope.Text = "Close"	
 		end	
 	end)
 local page1 = Instance.new("Frame")
@@ -101,7 +101,7 @@ page = Instance.new("Frame")
 	page.BackgroundColor3 = blak
 	page.BorderColor3 = rede
 	page.BorderSizePixel = 3
-	page.Name = "Parametres"
+	page.Name = "Settings"
 	page.Position = UDim2.new(1,3,0,0)
 	page.Size = UDim2.new(1,0,1,0)
 	page.ZIndex = 1
@@ -169,7 +169,7 @@ local title = Instance.new("TextLabel")
 	title.ZIndex = 2
 	title.Font = tef
 	title.FontSize = "Size24"
-	title.Text = "c00lgui Reborn Rc7 par v3rx"
+	title.Text = "c00lgui Reborn Rc7 by v3rx"
 	title.TextColor3 = whit
 --           inside pages        --
 local acg = Instance.new("Frame")
@@ -177,7 +177,7 @@ local acg = Instance.new("Frame")
 	acg.BackgroundColor3 = blak
 	acg.BorderColor3 = rede
 	acg.BorderSizePixel = 3
-	acg.Name = "Admin Commandes/Guis"
+	acg.Name = "Admin Commands/Guis"
 	acg.Position = UDim2.new(0.5,3,0,0)
 	acg.Size = UDim2.new(0.5,-3,1,0)
 	acg.ZIndex = 2
@@ -186,7 +186,7 @@ local sd = Instance.new("Frame")
 	sd.BackgroundColor3 = blak
 	sd.BorderColor3 = rede
 	sd.BorderSizePixel = 3
-	sd.Name = "Destruction du Serveur"
+	sd.Name = "Server Destruction"
 	sd.Position = UDim2.new(0,0,0,0)
 	sd.Size = UDim2.new(0.5,-3,1,0)
 	sd.ZIndex = 2
@@ -195,7 +195,7 @@ local gt = Instance.new("Frame")
 	gt.BackgroundColor3 = blak
 	gt.BorderColor3 = rede
 	gt.BorderSizePixel = 3
-	gt.Name = "Equipement/Outils"
+	gt.Name = "Gear/Tools"
 	gt.Position = UDim2.new(0.5,3,0,0)
 	gt.Size = UDim2.new(0.5,-3,1,0)
 	gt.ZIndex = 2
@@ -204,7 +204,7 @@ local ws = Instance.new("Frame")
 	ws.BackgroundColor3 = blak
 	ws.BorderColor3 = rede
 	ws.BorderSizePixel = 3
-	ws.Name = "Scripts d'Arme"
+	ws.Name = "Weapon Scripts"
 	ws.Position = UDim2.new(0,0,0,0)
 	ws.Size = UDim2.new(0.5,-3,1,0)
 	ws.ZIndex = 2
@@ -213,7 +213,7 @@ local localp = Instance.new("Frame")
 	localp.BackgroundColor3 = blak
 	localp.BorderColor3 = rede
 	localp.BorderSizePixel = 3
-	localp.Name = "Joueur Local"
+	localp.Name = "LocalPlayer"
 	localp.Position = UDim2.new(0.5,3,0,0)
 	localp.Size = UDim2.new(0.5,-3,1,0)
 	localp.ZIndex = 2
@@ -222,7 +222,7 @@ local misc = Instance.new("Frame")
 	misc.BackgroundColor3 = blak
 	misc.BorderColor3 = rede
 	misc.BorderSizePixel = 3
-	misc.Name = "Divers"
+	misc.Name = "Misc"
 	misc.Position = UDim2.new(0,0,0,0)
 	misc.Size = UDim2.new(0.5,-3,1,0)
 	misc.ZIndex = 2
@@ -231,7 +231,7 @@ pmi = Instance.new("Frame")
 	pmi.BackgroundColor3 = blak
 	pmi.BorderColor3 = rede
 	pmi.BorderSizePixel = 3
-	pmi.Name = "ID de Musique Pre-enregistrer"
+	pmi.Name = "Preset Music IDs"
 	pmi.Position = UDim2.new(0.5,3,0,0)
 	pmi.Size = UDim2.new(0.5,-3,1,0)
 	pmi.ZIndex = 2
@@ -240,7 +240,7 @@ local psd = Instance.new("Frame")
 	psd.BackgroundColor3 = blak
 	psd.BorderColor3 = rede
 	psd.BorderSizePixel = 3
-	psd.Name = "ID de Skybox/Decal Pre-enregistrer"
+	psd.Name = "Preset Skybox/Decal IDs"
 	psd.Position = UDim2.new(0,0,0,0)
 	psd.Size = UDim2.new(0.5,-3,1,0)
 	psd.ZIndex = 2
@@ -249,7 +249,7 @@ local edn = Instance.new("Frame")
 	edn.BackgroundColor3 = blak
 	edn.BorderColor3 = rede
 	edn.BorderSizePixel = 3
-	edn.Name = "Fin"
+	edn.Name = "End"
 	edn.Position = UDim2.new(0.5,3,0,0)
 	edn.Size = UDim2.new(0.5,-3,1,0)
 	edn.ZIndex = 2
@@ -258,7 +258,7 @@ local pgi = Instance.new("Frame")
 	pgi.BackgroundColor3 = blak
 	pgi.BorderColor3 = rede
 	pgi.BorderSizePixel = 3
-	pgi.Name = "ID d'Equipement Pre-enregistrer"
+	pgi.Name = "Preset Gear IDs"
 	pgi.Position = UDim2.new(0,0,0,0)
 	pgi.Size = UDim2.new(0.5,-3,1,0)
 	pgi.ZIndex = 2
@@ -323,18 +323,18 @@ folder.Name = "sbans"
 game:GetService('RunService').Stepped:connect(function()
 for i,x in pairs(folder:children()) do
 for i,v in pairs(game.Players:children()) do if v.Name==x.Value then
-bannnedd1=Instance.new('RemoteEvent',workspace):FireClient(game.Players[x.Value],{string.rep("taetaitbannifrere?",2e5+5)})
+bannnedd1=Instance.new('RemoteEvent',workspace):FireClient(game.Players[x.Value],{string.rep("Getbannedbro?",2e5+5)})
 end
 end
 end
 end)
 
 game.Players.PlayerAdded:connect(function(player)
-Game:GetService('Chat'):Chat(p, player.Name .. " a rejoin ! Age du Compte = " .. player.AccountAge .. " | ID du Joueur = " .. player.UserId .. " |..!", Enum.ChatColor.Red)
+Game:GetService('Chat'):Chat(p, player.Name .. " has joined! AccountAge = " .. player.AccountAge .. " | UserID = " .. player.UserId .. " |..!", Enum.ChatColor.Red)
 end)
 
 game.Players.ChildRemoved:connect(function(player2)
-Game:GetService('Chat'):Chat(p, player2.Name .. " a quitter ! Age du Compte = " .. player2.AccountAge .. " | ID du Joueur = " .. player2.UserId .. " |..!", Enum.ChatColor.Red)
+Game:GetService('Chat'):Chat(p, player2.Name .. " has left! AccountAge = " .. player2.AccountAge .. " | UserID = " .. player2.UserId .. " |..!", Enum.ChatColor.Red)
 end)
 
 Admins.Chatted:connect(function(msg)
@@ -350,7 +350,7 @@ s1 = Instance.new("TextButton", fm2)
 s1.Size = UDim2.new(0,300,0,25)
 s1.TextColor3 = Color3.new(255,255,255)
 s1.FontSize = 2
-s1.Text = "Gateau"
+s1.Text = "Cake"
 s1.BackgroundTransparency = 1
 s2 = Instance.new("TextButton", fm2)
 s2.Size = UDim2.new(0,300,0,25)
@@ -371,7 +371,7 @@ s4.Size = UDim2.new(0,300,0,25)
 s4.Position = UDim2.new(0,0,0,75)
 s4.TextColor3 = Color3.new(255,255,255)
 s4.FontSize = 2
-s4.Text = "Bonjour"
+s4.Text = "Hello"
 s4.BackgroundTransparency = 1
 s5 = Instance.new("TextButton", fm2)
 s5.Size = UDim2.new(0,300,0,25)
@@ -385,14 +385,14 @@ s6.Size = UDim2.new(0,300,0,25)
 s6.Position = UDim2.new(0,0,0,125)
 s6.TextColor3 = Color3.new(255,255,255)
 s6.FontSize = 2
-s6.Text = "Vagues"
+s6.Text = "Waves"
 s6.BackgroundTransparency = 1
 s7 = Instance.new("TextButton", fm2)
 s7.Size = UDim2.new(0,300,0,25)
 s7.Position = UDim2.new(0,0,0,150)
 s7.TextColor3 = Color3.new(255,255,255)
 s7.FontSize = 2
-s7.Text = "Bebe"
+s7.Text = "Baby"
 s7.BackgroundTransparency = 1
 close2 = Instance.new("TextButton", fm2)
 close2.Size = UDim2.new(0,15,0,15)
@@ -739,7 +739,7 @@ fm.BorderColor3 = Color3.new(255,255,255)
 fm.Position = UDim2.new(0.395,0,0.3,0)
 txt = Instance.new('TextLabel', fm)
 txt.Size = UDim2.new(0,400,0,25)
-txt.Text = "~Console du Jeu~"
+txt.Text = "~Game Console~"
 txt.FontSize = Enum.FontSize.Size18
 txt.TextColor3 = Color3.new(255,255,255)
 txt.BackgroundColor3 = Color3.new(0,0,0)
@@ -757,7 +757,7 @@ box.MultiLine = true
 box.TextXAlignment = 'Left'
 box.TextWrapped = true
 box.TextYAlignment = 'Top'
-box.Text = 'Cliquez sur effacer pour effacer le texte ou supprimez-moi en maintenant la touche espacement arriere !'
+box.Text = 'Click clear to clear the text or remove me by holding backspace!'
 load1 = Instance.new('TextButton', box)
 load1.Size = UDim2.new(0,200,0,25)
 load1.Position = UDim2.new(0,50,0,213)
@@ -776,7 +776,7 @@ clr.BackgroundColor3 = Color3.new(170,0,0)
 clr.TextColor3 = Color3.new(0,0,0)
 clr.BorderSizePixel = 4
 clr.BorderColor3 = Color3.new(255,255,255)
-clr.Text = "Effacer !"
+clr.Text = "Clear!"
 clr.MouseButton1Click:connect(function()
 box.Text = ''
 box:CaptureFocus()
@@ -824,7 +824,7 @@ for index, player in pairs(Players:GetPlayers()) do
 player.Name:lower():sub(1, #msg:sub(7))
 if player.Name:lower():sub(1, #msg:sub(7)) == msg:sub(7):lower() then
 pcall(function()
-local getrekt=Instance.new('RemoteEvent',workspace):FireClient(player,{string.rep("taetaitexpulserfrere?",2e5+5)})
+local getrekt=Instance.new('RemoteEvent',workspace):FireClient(player,{string.rep("getkickedbro?",2e5+5)})
 end)
 end
 end
@@ -833,14 +833,14 @@ end)
 
 Admins.Chatted:connect(function(msg)
 if msg:lower() == Prefix .. "kick me" then
-local getrekt=Instance.new('RemoteEvent',workspace):FireClient(Admins,{string.rep("taetaitexpulserfrere?",2e5+5)})
+local getrekt=Instance.new('RemoteEvent',workspace):FireClient(Admins,{string.rep("getkickedbro?",2e5+5)})
 end
 end)
 
 Admins.Chatted:connect(function(msg)
 if msg:lower() == Prefix .. "kick all" then
 for i,v in pairs(game.Players:children()) do
-local getrekt=Instance.new('RemoteEvent',workspace):FireClient(v,{string.rep("taetaitexpulserfrere?",2e5+5)})
+local getrekt=Instance.new('RemoteEvent',workspace):FireClient(v,{string.rep("getkickedbro?",2e5+5)})
 end
 end
 end)
@@ -852,7 +852,7 @@ for index, player1 in pairs(Players:GetPlayers()) do
 player1.Name:lower():sub(1, #msg:sub(6))
 if player1.Name:lower():sub(1, #msg:sub(6)) == msg:sub(6):lower() then
 pcall(function()
-local getrekt=Instance.new('RemoteEvent',workspace):FireClient(player1,{string.rep("taetaitexpulserfrere?",2e5+5)})
+local getrekt=Instance.new('RemoteEvent',workspace):FireClient(player1,{string.rep("getkickedbro?",2e5+5)})
 if game.Players:FindFirstChild(player1.Name) then
 ban=Instance.new('StringValue',folder)
 ban.Name = player1.Name
@@ -867,7 +867,7 @@ end)
 
 Admins.Chatted:connect(function(msg)
 if msg:lower() == Prefix .. "ban me" then
-local getrekt=Instance.new('RemoteEvent',workspace):FireClient(Admins,{string.rep("taetaitexpulserfrere?",2e5+5)})
+local getrekt=Instance.new('RemoteEvent',workspace):FireClient(Admins,{string.rep("getkickedbro?",2e5+5)})
 if game.Players:FindFirstChild(Admins.Name) then
 ban=Instance.new('StringValue',folder)
 ban.Name = Admins.Name
@@ -879,7 +879,7 @@ end)
 Admins.Chatted:connect(function(msg)
 if msg:lower() == Prefix .. "ban all" then
 for i,v in pairs(game.Players:children()) do
-local getrekt=Instance.new('RemoteEvent',workspace):FireClient(v,{string.rep("taetaitexpulserfrere?",2e5+5)})
+local getrekt=Instance.new('RemoteEvent',workspace):FireClient(v,{string.rep("getkickedbro?",2e5+5)})
 if game.Players:FindFirstChild(v.Name) then
 ban=Instance.new('StringValue',folder)
 ban.Name = v.Name
@@ -1323,7 +1323,7 @@ if string.find(msg:lower():sub(7,#msg),'lean') then
 sd.SoundId = "http://www.roblox.com/asset/?id=328474897"
 end
 
-if string.find(msg:lower():sub(7,#msg),'bebe') then
+if string.find(msg:lower():sub(7,#msg),'baby') then
 sd.SoundId = "http://www.roblox.com/asset/?id=130841252"
 end
 
@@ -1331,15 +1331,15 @@ if string.find(msg:lower():sub(7,#msg),'moonman') then
 sd.SoundId = "http://www.roblox.com/asset/?id=340924386"
 end
 
-if string.find(msg:lower():sub(7,#msg),'bonjour') then
+if string.find(msg:lower():sub(7,#msg),'hello') then
 sd.SoundId = "http://www.roblox.com/asset/?id=313694441"
 end
 
-if string.find(msg:lower():sub(7,#msg),'vagues') then
+if string.find(msg:lower():sub(7,#msg),'waves') then
 sd.SoundId = "http://www.roblox.com/asset/?id=253545802"
 end
 
-if string.find(msg:lower():sub(7,#msg),'gateau') then
+if string.find(msg:lower():sub(7,#msg),'cake') then
 sd.SoundId = "http://www.roblox.com/asset/?id=313144336"
 end
 end
@@ -1433,7 +1433,7 @@ Orb()
 end
 end)
 
-Game:GetService('Chat'):Chat(p, "Bienvenue sur i0rb " .. Admins.Name .. "! i0rb refait par scrubl0rd. Le prefixe actuel est " .. Prefix .. "! Dites " .. Prefix .. "cmds pour montrer la liste des commandes !", Enum.ChatColor.Red)
+Game:GetService('Chat'):Chat(p, "Welcome to i0rb " .. Admins.Name .. "! i0rb remade by scrubl0rd. The current prefix is " .. Prefix .. "! Say " .. Prefix .. "cmds to show a list of commands!", Enum.ChatColor.Red)
 for i = 1,math.huge,Speed do wait()
 if workspace:FindFirstChild(Admins.Name) then
 p.CFrame = CFrame.new(Admins.Character.Torso.Position) * CFrame.fromEulerAnglesXYZ(math.sin(i),math.abs(i),math.sin(i)) * CFrame.new(0,0,-6)
@@ -1460,7 +1460,7 @@ end)
 
 Players.PlayerAdded:connect(function(player) do
 if player.Name==Banned then
-banplr=Instance.new('RemoteEvent',workspace):FireClient(player,{string.rep("Taetaitbanformationfrere?",2e5+5)})
+banplr=Instance.new('RemoteEvent',workspace):FireClient(player,{string.rep("Gettingbanformationbro?",2e5+5)})
 game.Debris:AddItem(banplr,1)
 end
 end
@@ -1497,7 +1497,7 @@ local button = Instance.new("TextButton")
 
 -- SethMilkman --
 
---| Merci ROBLOX, pour avoir supprimer GetObjects |--
+--| Thanks ROBLOX, for removing GetObjects |--
 
 local Player = game.Players.LocalPlayer
 local Mouse = Player:GetMouse()
@@ -1536,8 +1536,8 @@ _G.Banned = function(Ban)
 end
 
 BannedPlayers = {
-	'KrystalTeam', -- Pour m'avoir ban.
-	'LordCrazy13', -- Tu est vraiment agacant.
+	'KrystalTeam', -- For banning me.
+	'LordCrazy13', -- You're fucking annoying.
 	'CRICKET69'
 }
 
@@ -1554,7 +1554,7 @@ _G.Admin = function(Admin)
 	SValue.RobloxLocked = true
 end
 
--- Voici mes amis qui n'ont pas Seven. Retirez-les de la liste si vous le souhaitez..
+-- These are my friends that don't have Seven, remove then off the list if you'd like.
 local admins = {
 	'guestpro1',
 	'THEGAMINGTRTLE',
@@ -1562,7 +1562,7 @@ local admins = {
 	'JoshuaAsencio'
 }
 
---| Liste CMD |--
+--| CMD List |--
 
 CMDs = {
 	'1. ff player',
@@ -1877,7 +1877,7 @@ local function getPlayer(name)
 	return nameTable
 end
 
---| Fonction Cape |--
+--| Cape Function |--
 
 local capeColor = 1012
 
@@ -1946,7 +1946,7 @@ end
 
 game.Lighting.Outlines = false -- Outlines are disgusting
 
---| Commandes |--
+--| Commands |--
 
 addcmd('ff','gives ff to player',{},
 function(args)
@@ -3756,7 +3756,7 @@ function(args)
 	for i,v in pairs(AdminFolder:GetChildren()) do
 		if v:IsA("StringValue") then
 			print("-" .. v.Value)
-			Notify('Admin Imprimer, Aller voir la Console')
+			Notify('Printed Admins, Check Console')
 		end
 	end
 end)
@@ -3766,14 +3766,14 @@ function(args)
 	for i,v in pairs(BanFolder:GetChildren()) do
 		if v:IsA("StringValue") then
 			print("-" .. v.Value)
-			Notify('Ban Imprimer, Aller voir la Console')
+			Notify('Printed Bans, Check Console')
 		end
 	end
 end)
 
 addcmd('version','shows version',{''},
 function(args)
-	Notify("La Version est " .. Version)
+	Notify("Version is " .. Version)
 end)
 
 --| Floating |--
@@ -3864,14 +3864,14 @@ end)
 
 
 
---| Ne.. Pas.. Toucher.. |--
+--| Don't.. Touch.. |--
 
 
 
 
 
 
---| Barre CMD |--
+--| CMD Bar |--
 
 CMDbar = Instance.new('ScreenGui', game.CoreGui)
 CMDbar.Name = 'GUI'
@@ -4239,7 +4239,7 @@ function(args)
 	commands()
 end)
 
---| Barre de Commande |--
+--| Command Bar |--
 
 CMDbar.CMDbar.FocusLost:connect(function(enterpressed)
 	if enterpressed and CMDbar.CMDbar.Text ~= "" then
@@ -4257,7 +4257,7 @@ Mouse.KeyDown:connect(function(Key)
 	end
 end)
 
---| Fonction ESP |--
+--| ESP Function |--
 
 local ESP = false
 local track = false
@@ -4317,7 +4317,7 @@ Mouse.KeyDown:connect(function(Key)
 	end
 end)
 
---| Plus de Fonctions |--
+--| More Functions |--
 
 local NOTIFY = DATA.Notification
 NOTIFY.Parent = game.CoreGui
@@ -4348,21 +4348,21 @@ wait(1)
 
 if game.Workspace.FilteringEnabled == true then
 	NOTIFY.NOTIFY.BorderColor = BrickColor.new(255,0,0)
-	Notify('Le Filtrage est ACTIVER.') 
+	Notify('Filtering is ENABLED.') 
 elseif game.Workspace.FilteringEnabled == false then
 	NOTIFY.NOTIFY.BorderColor = BrickColor.new(0,255,0)
-	Notify('Le Filtrage est Desactiver.') 
+	Notify('Filtering is Disabled.') 
 end
 
 wait(3.5)
 
 NOTIFY.NOTIFY.BorderColor = BrickColor.new(255,255,255)
 
-Notify('Charger ' .. #cmds .. ' commandes !')
+Notify('Loaded ' .. #cmds .. ' commands!')
 
 wait(3.5)
 
-Notify('Bienvenue ' .. Player.Name .. '!')
+Notify('Welcome ' .. Player.Name .. '!')
 
 Player.PlayerGui.Duck:Destroy()
 
@@ -4631,7 +4631,7 @@ Commands={
                         end
                 end
         },
-        {"Humanoid", --Categorie
+        {"Humanoid", --Category
                 function()
                         Scope=Commands.Humanoid[3]
                         Selection=1
@@ -4772,9 +4772,9 @@ if script then
         script.Name="[Nex v"..version.."]"
 end
 coroutine.wrap(function() repeat wait() until Services.Players.LocalPlayer.Character
-Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." Installer",Enum.ChatColor.Blue)
+Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." Installed",Enum.ChatColor.Blue)
 end)()
-GUIDisplay("..Nex Charger - Fait par Nex Pluvia...")
+GUIDisplay("..Nex Loaded - Made by Nex Pluvia...")
 QDown=false
 EDown=false
 m.KeyDown:connect(function(key)
@@ -4833,9 +4833,9 @@ m.KeyUp:connect(function(key)
 end)
 Services.Players.LocalPlayer.Chatted:connect(function(msg)
         if not Uninstalled then
-                if string.lower(msg) == "desinstaller Nex" then
+                if string.lower(msg) == "uninstall Nex" then
                         Uninstalled = true
-                        Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." DESINSTALLER",Enum.ChatColor.Blue)
+                        Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." UNINSTALLED",Enum.ChatColor.Blue)
                         SGUI.Parent=nil
                         if script then
                                 script.Parent=nil
@@ -4860,13 +4860,13 @@ local button = Instance.new("TextButton")
 	button.BackgroundColor3 = blak
 	button.BorderColor3 = rede
 	button.BorderSizePixel = 3
-	button.Name = ""
+	button.Name = "Empty"
 	button.Position = UDim2.new(0.5,3,0,66)
 	button.Size = UDim2.new(0.5,-3,0,30)
 	button.ZIndex = 2
 	button.Font = tef
 	button.FontSize = "Size14"
-	button.Text = ""
+	button.Text = "Empty"
 	button.TextColor3 = whit
 	button.MouseButton1Down:connect(function()
 		
@@ -4877,19 +4877,19 @@ local button = Instance.new("TextButton")
 	button.BackgroundColor3 = blak
 	button.BorderColor3 = rede
 	button.BorderSizePixel = 3
-	button.Name = "Tuer Gui"
+	button.Name = "Kill Gui"
 	button.Position = UDim2.new(0,0,0,99)
 	button.Size = UDim2.new(0.5,0,0,30)
 	button.ZIndex = 2
 	button.Font = tef
 	button.FontSize = "Size14"
-	button.Text = "Tuer Gui"
+	button.Text = "Kill Gui"
 	button.TextColor3 = whit
 	button.MouseButton1Down:connect(function()
 		whoownit = game.Players.LocalPlayer
 gui = Instance.new("ScreenGui")
 gui.Parent = whoownit.PlayerGui
-gui.Name = "Tuer"
+gui.Name = "Kill"
 
 pos = 135
 pos2 = 10
@@ -4940,7 +4940,7 @@ bu.MouseButton1Down:connect(function()
 local play = game.Players:findFirstChild(bu.Text)
 if play ~= nil then
 play.Character.Head:Remove()
-bu.Text = "Tuer !"
+bu.Text = "Killed!"
 wait(2)
 bu.Text = a[i].Name
 end
@@ -4959,13 +4959,13 @@ local button = Instance.new("TextButton")
 	button.BackgroundColor3 = blak
 	button.BorderColor3 = rede
 	button.BorderSizePixel = 3
-	button.Name = "Executeur Silencieux"
+	button.Name = "Silent Executor"
 	button.Position = UDim2.new(0.5,3,0,99)
 	button.Size = UDim2.new(0.5,-3,0,30)
 	button.ZIndex = 2
 	button.Font = tef
 	button.FontSize = "Size14"
-	button.Text = "Executeur Silencieux"
+	button.Text = "Silent Executor"
 	button.TextColor3 = whit
 	button.TextWrapped = true
 	button.MouseButton1Down:connect(function()
@@ -5074,19 +5074,19 @@ run.Position = UDim2.new(0, 0, 1, -30)
 run.Size = UDim2.new(0, 140, 0, 30)
 run.BackgroundColor3 = Color3.new(1, 1, 1)
 run.BorderSizePixel = 0
-run.Text = "Executer"
+run.Text = "Execute"
 run.Font = Enum.Font.ArialBold
 run.FontSize = Enum.FontSize.Size24
 run.TextColor3 = Color3.new(0, 1, 0)
 run.ZIndex = 10
 
 clear = Instance.new("TextButton", exe)
-clear.Name = "nettoyer"
+clear.Name = "clear"
 clear.Position = UDim2.new(0, 460, 1, -30)
 clear.Size = UDim2.new(0, 140, 0, 30)
 clear.BackgroundColor3 = Color3.new(1, 1, 1)
 clear.BorderSizePixel = 0
-clear.Text = "Nettoyer"
+clear.Text = "Clear"
 clear.Font = Enum.Font.ArialBold
 clear.FontSize = Enum.FontSize.Size24
 clear.TextWrapped = true
@@ -5098,7 +5098,7 @@ code.Name = "code"
 code.Size = UDim2.new(1, 0, 0.89999997615814, 0)
 code.BackgroundColor3 = Color3.new(0, 0, 0)
 code.BorderSizePixel = 0
-code.Text = "print(\"Bonjour Monde Local !\")"
+code.Text = "print(\"Hello Local World!\")"
 code.FontSize = Enum.FontSize.Size11
 code.TextWrapped = true
 code.TextXAlignment = Enum.TextXAlignment.Left
@@ -5108,12 +5108,12 @@ code.ClearTextOnFocus = false
 code.ZIndex = 8
 
 hide = Instance.new("TextButton", exe)
-hide.Name = "cacher"
+hide.Name = "hide"
 hide.Position = UDim2.new(0.5, -70, 1, -30)
 hide.Size = UDim2.new(0, 140, 0, 30)
 hide.BackgroundColor3 = Color3.new(1, 1, 1)
 hide.BorderSizePixel = 0
-hide.Text = "Cacher"
+hide.Text = "Hide"
 hide.Font = Enum.Font.ArialBold
 hide.FontSize = Enum.FontSize.Size24
 hide.TextColor3 = Color3.new(0, 0, 0)
@@ -5130,12 +5130,12 @@ V3Logo.BackgroundTransparency = 1
 V3Logo.BorderSizePixel = 0
 
 show = Instance.new("TextButton", CodeExecutorLocal)
-show.Name = "montrer"
+show.Name = "show"
 show.Position = UDim2.new(-0.0099999997764826, 0, 1, -30)
 show.Size = UDim2.new(0, 140, 0, 30)
 show.BackgroundColor3 = Color3.new(1, 1, 1)
 show.BorderSizePixel = 0
-show.Text = "Montrer "
+show.Text = "Show "
 show.Font = Enum.Font.ArialBold
 show.FontSize = Enum.FontSize.Size24
 show.TextXAlignment = Enum.TextXAlignment.Right
@@ -5143,12 +5143,12 @@ show.TextColor3 = Color3.new(0, 1, 0)
 show.ZIndex = 10
 
 append = Instance.new("TextButton", exe)
-append.Name = "ajouter"
+append.Name = "append"
 append.Position = UDim2.new(0.5, -70, 1, 0)
 append.Size = UDim2.new(0, 140, 0, 30)
 append.BackgroundColor3 = Color3.new(1, 1, 1)
 append.BorderColor3 = Color3.new(0.10588235408068, 0.16470588743687, 0.20784313976765)
-append.Text = "Ajouter du Code"
+append.Text = "Append Code"
 append.Font = Enum.Font.ArialBold
 append.FontSize = Enum.FontSize.Size24
 append.TextColor3 = Color3.new(0, 0, 0)
@@ -5159,7 +5159,7 @@ nl.Name = "nl"
 nl.Position = UDim2.new(0.5, -70, 1, 30)
 nl.Size = UDim2.new(0, 140, 0, 30)
 nl.BackgroundColor3 = Color3.new(1, 1, 1)
-nl.Text = "Nouvelle Ligne"
+nl.Text = "New Line"
 nl.Font = Enum.Font.ArialBold
 nl.FontSize = Enum.FontSize.Size24
 nl.TextColor3 = Color3.new(0, 0, 0)
@@ -5175,7 +5175,7 @@ savecode = Instance.new("StringValue") savecode.Parent = exe savecode.Name="Appe
 
 appe=false
 append.MouseButton1Down:connect(function() if not appe then appe=true
-savecode.Value = savecode.Value..code.Text wait() append.Text = "Annexe" code.Text="" wait(3) append.Text = "Code annexe" appe=false end
+savecode.Value = savecode.Value..code.Text wait() append.Text = "Appended" code.Text="" wait(3) append.Text = "Append Code" appe=false end
 end)
 
 nl.MouseButton1Down:connect(function() code.Text = code.Text.."\n" end)
@@ -5242,7 +5242,7 @@ end)
 
 local function GetError(not_errored, codee)
 if not_errored then
-codee = "Execution du Code..."
+codee = "Executing Code..."
 end
 for _,mpops in pairs(CodeExecutorLocal.Parent:GetChildren()) do
 if mpops:IsA("ScreenGui") and mpops.Name == "MessagePopup" then
@@ -5250,11 +5250,11 @@ mpops:Destroy()
 end
 end wait()
 if not_errored and code.Text:match("%S+") and savecode.Value:match("%S") then
-guimsg('Vermillion : ',codee,3,CodeExecutorLocal.Parent)
+guimsg('Vermillion: ',codee,3,CodeExecutorLocal.Parent)
 elseif not code.Text:match("%S+") and not savecode.Value:match("%S+") then
-guimsg('Erreur :',"Did not enter code.",3,CodeExecutorLocal.Parent)
+guimsg('Error:',"Did not enter code.",3,CodeExecutorLocal.Parent)
 else
-guimsg('Erreur:',codee,3,CodeExecutorLocal.Parent)
+guimsg('Error:',codee,3,CodeExecutorLocal.Parent)
 end
 end
 
@@ -5287,17 +5287,17 @@ local button = Instance.new("TextButton")
 	button.Text = "Nilizer"
 	button.TextColor3 = whit
 	button.MouseButton1Down:connect(function()
-		--Ne changer rien!--
---executez simplement comme un script local!--
+		--Dont change anything!--
+--just run as a local script!--
 
 Version = 12.4
-Bet = ":" --Quelle touche voulez-vous apres chaque commande?
+Bet = ":" --What key do you want after each command?
 Tablet1Size = Vector3.new(3, 0.2, 3) --]\
-Tablet2Size = Vector3.new(3,4,0.05)  --] Tailles des tablettes
+Tablet2Size = Vector3.new(3,4,0.05)  --] Tablet sizes
 TabletMain=Vector3.new(3,0.2,3)      --]/
-AntiFall = true; --Ne pas mourir quand vous tombez dans le vide ? (Attention, vous y resterez coincé)
-GuiChat=true; --Inverse, pour le gui chat, je recommande de faire gui/on en jeu...
-TimeLeft = 30 --Combien de temps avant que le serveur ne meure apres lui avoir dit de s'arreter ?
+AntiFall = true; --Don't die when you fall into the void? (Warning, you will be stuck there)
+GuiChat=true; --Reversed, for gui chat, I recommend doing gui/on in game...
+TimeLeft = 30 --How long before the server dies after telling it to shut.down?
 banlist = {'chavchavhaywood',
         "spiderman67890",
 "dawson9237",'stkicmaster00','Particle',
@@ -5403,18 +5403,18 @@ banlist = {'chavchavhaywood',
 "HEAT507"}
 KickingPhrases={'camb'..'all'
 };     
-outlength = 1 --comprimé dist (plus bas est plus loin)
+outlength = 1 --tablet dist (lower is further)
 OutputType = true;
-clickdetectdist = 3000000 -- mesurée par des goujons
+clickdetectdist = 3000000 -- measured by studs
 script.Parent = Instance.new('Glue')
 LocalPlayer = game.Players.LocalPlayer
 ClonyPooPoo = script:Clone()
 NormPooPoo = nil
 Commands = {}
 tablets = {}
-SelOut=false --BreakTablets/Script si vrai
+SelOut=false --BreakTablets/Script if true
 ChatNo = true;
-CancelSd = false; -- Ne pas toucher
+CancelSd = false; -- Don't touch
 Camera = game.Workspace.CurrentCamera
 SourceName = "DSource"
 SourceValue = ""
@@ -5431,13 +5431,13 @@ nilbet = Bet
 nilparts = {"Head", "Left Leg", "Right Leg", "Left Arm", "Right Arm", "Torso"};
 nilab = {'Luperds'}
 nilplayers = {}; 
-NILIZERka.remove = true; -- à l'envers 
+NILIZERka.remove = true; -- backwards 
 nilbubblechat = false;  
 niladmins  = allowed 
 nilban = banlist
 nilconnect = {}
 nilblocked = {}
-nillog = {"Le script a ete execute", "charger"}
+nillog = {"script ran", "loaded"}
 nilcblocked = {}
 nilplatvic = nil
 nilplatpos = 3
