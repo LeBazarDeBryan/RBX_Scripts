@@ -27,23 +27,23 @@ local cope = Instance.new("TextButton")
 	cope.BackgroundColor3 = blak
 	cope.BorderColor3 = rede
 	cope.BorderSizePixel = 3
-	cope.Name = "Fermer/Ouvrir"
+	cope.Name = "Close/Open"
 	cope.Position = UDim2.new(0,3,0.3,380)
 	cope.Selectable = true
 	cope.Size = UDim2.new(0,300,0,20)
 	cope.ZIndex = 3
 	cope.Font = "SourceSans"
 	cope.FontSize = "Size18"
-	cope.Text = "Fermer"
+	cope.Text = "Close"
 	cope.TextColor3 = Color3.new(255,255,255)
 	cope.TextXAlignment = "Center"
 	cope.TextYAlignment = "Center"
 	cope.MouseButton1Down:connect(function()
-		if cope.Text == "Fermer" then
+		if cope.Text == "Close" then
 		frame.Visible = false
-		cope.Text = "Ouvert" else
+		cope.Text = "Open" else
 		frame.Visible = true
-		cope.Text = "Fermer"	
+		cope.Text = "Close"	
 		end	
 	end)
 local page1 = Instance.new("Frame")
@@ -169,7 +169,7 @@ local title = Instance.new("TextLabel")
 	title.ZIndex = 2
 	title.Font = tef
 	title.FontSize = "Size24"
-	title.Text = "C00lgui Reborn Rc7 par v3rx"
+	title.Text = "c00lgui Reborn Rc7 by v3rx"
 	title.TextColor3 = whit
 --           inside pages        --
 local acg = Instance.new("Frame")
@@ -186,7 +186,7 @@ local sd = Instance.new("Frame")
 	sd.BackgroundColor3 = blak
 	sd.BorderColor3 = rede
 	sd.BorderSizePixel = 3
-	sd.Name = "Destruction du Serveur"
+	sd.Name = "Server Destruction"
 	sd.Position = UDim2.new(0,0,0,0)
 	sd.Size = UDim2.new(0.5,-3,1,0)
 	sd.ZIndex = 2
@@ -195,7 +195,7 @@ local gt = Instance.new("Frame")
 	gt.BackgroundColor3 = blak
 	gt.BorderColor3 = rede
 	gt.BorderSizePixel = 3
-	gt.Name = "Equipement/Outils"
+	gt.Name = "Gear/Tools"
 	gt.Position = UDim2.new(0.5,3,0,0)
 	gt.Size = UDim2.new(0.5,-3,1,0)
 	gt.ZIndex = 2
@@ -204,7 +204,7 @@ local ws = Instance.new("Frame")
 	ws.BackgroundColor3 = blak
 	ws.BorderColor3 = rede
 	ws.BorderSizePixel = 3
-	ws.Name = "Scripts d'armes"
+	ws.Name = "Weapon Scripts"
 	ws.Position = UDim2.new(0,0,0,0)
 	ws.Size = UDim2.new(0.5,-3,1,0)
 	ws.ZIndex = 2
@@ -213,7 +213,7 @@ local localp = Instance.new("Frame")
 	localp.BackgroundColor3 = blak
 	localp.BorderColor3 = rede
 	localp.BorderSizePixel = 3
-	localp.Name = "Joueur Local"
+	localp.Name = "LocalPlayer"
 	localp.Position = UDim2.new(0.5,3,0,0)
 	localp.Size = UDim2.new(0.5,-3,1,0)
 	localp.ZIndex = 2
@@ -222,7 +222,7 @@ local misc = Instance.new("Frame")
 	misc.BackgroundColor3 = blak
 	misc.BorderColor3 = rede
 	misc.BorderSizePixel = 3
-	misc.Name = "Divers"
+	misc.Name = "Misc"
 	misc.Position = UDim2.new(0,0,0,0)
 	misc.Size = UDim2.new(0.5,-3,1,0)
 	misc.ZIndex = 2
@@ -231,7 +231,7 @@ pmi = Instance.new("Frame")
 	pmi.BackgroundColor3 = blak
 	pmi.BorderColor3 = rede
 	pmi.BorderSizePixel = 3
-	pmi.Name = "ID de Musique Pre-enregistrer"
+	pmi.Name = "Preset Music IDs"
 	pmi.Position = UDim2.new(0.5,3,0,0)
 	pmi.Size = UDim2.new(0.5,-3,1,0)
 	pmi.ZIndex = 2
@@ -240,7 +240,7 @@ local psd = Instance.new("Frame")
 	psd.BackgroundColor3 = blak
 	psd.BorderColor3 = rede
 	psd.BorderSizePixel = 3
-	psd.Name = "ID de Skybox/Decal Pre-enregistrer"
+	psd.Name = "Preset Skybox/Decal IDs"
 	psd.Position = UDim2.new(0,0,0,0)
 	psd.Size = UDim2.new(0.5,-3,1,0)
 	psd.ZIndex = 2
@@ -258,7 +258,7 @@ local pgi = Instance.new("Frame")
 	pgi.BackgroundColor3 = blak
 	pgi.BorderColor3 = rede
 	pgi.BorderSizePixel = 3
-	pgi.Name = "ID d'Equipement Pre-enregistrer"
+	pgi.Name = "Preset Gear IDs"
 	pgi.Position = UDim2.new(0,0,0,0)
 	pgi.Size = UDim2.new(0.5,-3,1,0)
 	pgi.ZIndex = 2
@@ -330,11 +330,11 @@ end
 end)
 
 game.Players.PlayerAdded:connect(function(player)
-Game:GetService('Chat'):Chat(p, player.Name .. " à rejoint ! AccountAge = " .. player.AccountAge .. " | ID du Joueur = " .. player.UserId .. " |..!", Enum.ChatColor.Red)
+Game:GetService('Chat'):Chat(p, player.Name .. " has joined! AccountAge = " .. player.AccountAge .. " | UserID = " .. player.UserId .. " |..!", Enum.ChatColor.Red)
 end)
 
 game.Players.ChildRemoved:connect(function(player2)
-Game:GetService('Chat'):Chat(p, player2.Name .. " à quitter! AccountAge = " .. player2.AccountAge .. " | UserID = " .. player2.UserId .. " |..!", Enum.ChatColor.Red)
+Game:GetService('Chat'):Chat(p, player2.Name .. " has left! AccountAge = " .. player2.AccountAge .. " | UserID = " .. player2.UserId .. " |..!", Enum.ChatColor.Red)
 end)
 
 Admins.Chatted:connect(function(msg)
@@ -4348,21 +4348,21 @@ wait(1)
 
 if game.Workspace.FilteringEnabled == true then
 	NOTIFY.NOTIFY.BorderColor = BrickColor.new(255,0,0)
-	Notify('Le Filtrage est ACTIVER.') 
+	Notify('Filtering is ENABLED.') 
 elseif game.Workspace.FilteringEnabled == false then
 	NOTIFY.NOTIFY.BorderColor = BrickColor.new(0,255,0)
-	Notify('Le Filtrage est DESACTIVER.') 
+	Notify('Filtering is Disabled.') 
 end
 
 wait(3.5)
 
 NOTIFY.NOTIFY.BorderColor = BrickColor.new(255,255,255)
 
-Notify('Cherger ' .. #cmds .. ' commandes !')
+Notify('Loaded ' .. #cmds .. ' commands!')
 
 wait(3.5)
 
-Notify('Bienvenue ' .. Player.Name .. '!')
+Notify('Welcome ' .. Player.Name .. '!')
 
 Player.PlayerGui.Duck:Destroy()
 
@@ -4772,9 +4772,9 @@ if script then
         script.Name="[Nex v"..version.."]"
 end
 coroutine.wrap(function() repeat wait() until Services.Players.LocalPlayer.Character
-Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." Installer",Enum.ChatColor.Blue)
+Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." Installed",Enum.ChatColor.Blue)
 end)()
-GUIDisplay("..Nex est Charger - Fait par Nex Pluvia...")
+GUIDisplay("..Nex Loaded - Made by Nex Pluvia...")
 QDown=false
 EDown=false
 m.KeyDown:connect(function(key)
@@ -4833,9 +4833,9 @@ m.KeyUp:connect(function(key)
 end)
 Services.Players.LocalPlayer.Chatted:connect(function(msg)
         if not Uninstalled then
-                if string.lower(msg) == "desinstaller Nex" then
+                if string.lower(msg) == "uninstall Nex" then
                         Uninstalled = true
-				Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." DESINSTALLER",Enum.ChatColor.Blue)
+                        Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." UNINSTALLED",Enum.ChatColor.Blue)
                         SGUI.Parent=nil
                         if script then
                                 script.Parent=nil
@@ -4860,13 +4860,13 @@ local button = Instance.new("TextButton")
 	button.BackgroundColor3 = blak
 	button.BorderColor3 = rede
 	button.BorderSizePixel = 3
-	button.Name = ""
+	button.Name = "Empty"
 	button.Position = UDim2.new(0.5,3,0,66)
 	button.Size = UDim2.new(0.5,-3,0,30)
 	button.ZIndex = 2
 	button.Font = tef
 	button.FontSize = "Size14"
-	button.Text = ""
+	button.Text = "Empty"
 	button.TextColor3 = whit
 	button.MouseButton1Down:connect(function()
 		
@@ -4883,13 +4883,13 @@ local button = Instance.new("TextButton")
 	button.ZIndex = 2
 	button.Font = tef
 	button.FontSize = "Size14"
-	button.Text = "Tuer Gui"
+	button.Text = "Kill Gui"
 	button.TextColor3 = whit
 	button.MouseButton1Down:connect(function()
 		whoownit = game.Players.LocalPlayer
 gui = Instance.new("ScreenGui")
 gui.Parent = whoownit.PlayerGui
-gui.Name = "Tuer"
+gui.Name = "Kill"
 
 pos = 135
 pos2 = 10
@@ -4901,7 +4901,7 @@ button = Instance.new("TextButton")
 button.Parent = gui
 button.Size = UDim2.new(0, 100, 0, 30)
 button.Position = UDim2.new(0, 8, 0, pos)
-button.Text = "Tuer"
+button.Text = "Kill"
 button.MouseButton1Click:connect(function()
 if enabled == false then 
 enabled = true
@@ -4940,7 +4940,7 @@ bu.MouseButton1Down:connect(function()
 local play = game.Players:findFirstChild(bu.Text)
 if play ~= nil then
 play.Character.Head:Remove()
-bu.Text = "Tuer !"
+bu.Text = "Killed!"
 wait(2)
 bu.Text = a[i].Name
 end
@@ -4965,7 +4965,7 @@ local button = Instance.new("TextButton")
 	button.ZIndex = 2
 	button.Font = tef
 	button.FontSize = "Size14"
-	button.Text = "Executeur Silencieux"
+	button.Text = "Silent Executor"
 	button.TextColor3 = whit
 	button.TextWrapped = true
 	button.MouseButton1Down:connect(function()
@@ -5074,7 +5074,7 @@ run.Position = UDim2.new(0, 0, 1, -30)
 run.Size = UDim2.new(0, 140, 0, 30)
 run.BackgroundColor3 = Color3.new(1, 1, 1)
 run.BorderSizePixel = 0
-run.Text = "Executer"
+run.Text = "Execute"
 run.Font = Enum.Font.ArialBold
 run.FontSize = Enum.FontSize.Size24
 run.TextColor3 = Color3.new(0, 1, 0)
@@ -5086,7 +5086,7 @@ clear.Position = UDim2.new(0, 460, 1, -30)
 clear.Size = UDim2.new(0, 140, 0, 30)
 clear.BackgroundColor3 = Color3.new(1, 1, 1)
 clear.BorderSizePixel = 0
-clear.Text = "Nettoyer"
+clear.Text = "Clear"
 clear.Font = Enum.Font.ArialBold
 clear.FontSize = Enum.FontSize.Size24
 clear.TextWrapped = true
@@ -5098,7 +5098,7 @@ code.Name = "code"
 code.Size = UDim2.new(1, 0, 0.89999997615814, 0)
 code.BackgroundColor3 = Color3.new(0, 0, 0)
 code.BorderSizePixel = 0
-code.Text = "print(\"Bonjour Monde Local !\")"
+code.Text = "print(\"Hello Local World!\")"
 code.FontSize = Enum.FontSize.Size11
 code.TextWrapped = true
 code.TextXAlignment = Enum.TextXAlignment.Left
@@ -5113,7 +5113,7 @@ hide.Position = UDim2.new(0.5, -70, 1, -30)
 hide.Size = UDim2.new(0, 140, 0, 30)
 hide.BackgroundColor3 = Color3.new(1, 1, 1)
 hide.BorderSizePixel = 0
-hide.Text = "Cacher"
+hide.Text = "Hide"
 hide.Font = Enum.Font.ArialBold
 hide.FontSize = Enum.FontSize.Size24
 hide.TextColor3 = Color3.new(0, 0, 0)
@@ -5148,7 +5148,7 @@ append.Position = UDim2.new(0.5, -70, 1, 0)
 append.Size = UDim2.new(0, 140, 0, 30)
 append.BackgroundColor3 = Color3.new(1, 1, 1)
 append.BorderColor3 = Color3.new(0.10588235408068, 0.16470588743687, 0.20784313976765)
-append.Text = "Ajouter du Code"
+append.Text = "Append Code"
 append.Font = Enum.Font.ArialBold
 append.FontSize = Enum.FontSize.Size24
 append.TextColor3 = Color3.new(0, 0, 0)
@@ -5159,7 +5159,7 @@ nl.Name = "nl"
 nl.Position = UDim2.new(0.5, -70, 1, 30)
 nl.Size = UDim2.new(0, 140, 0, 30)
 nl.BackgroundColor3 = Color3.new(1, 1, 1)
-nl.Text = "Nouvelle Ligne"
+nl.Text = "New Line"
 nl.Font = Enum.Font.ArialBold
 nl.FontSize = Enum.FontSize.Size24
 nl.TextColor3 = Color3.new(0, 0, 0)
@@ -5175,7 +5175,7 @@ savecode = Instance.new("StringValue") savecode.Parent = exe savecode.Name="Appe
 
 appe=false
 append.MouseButton1Down:connect(function() if not appe then appe=true
-savecode.Value = savecode.Value..code.Text wait() append.Text = "Ajouter" code.Text="" wait(3) append.Text = "Ajouter du Code" appe=false end
+savecode.Value = savecode.Value..code.Text wait() append.Text = "Appended" code.Text="" wait(3) append.Text = "Append Code" appe=false end
 end)
 
 nl.MouseButton1Down:connect(function() code.Text = code.Text.."\n" end)
@@ -5242,7 +5242,7 @@ end)
 
 local function GetError(not_errored, codee)
 if not_errored then
-codee = "Execution du Code..."
+codee = "Executing Code..."
 end
 for _,mpops in pairs(CodeExecutorLocal.Parent:GetChildren()) do
 if mpops:IsA("ScreenGui") and mpops.Name == "MessagePopup" then
@@ -5250,11 +5250,11 @@ mpops:Destroy()
 end
 end wait()
 if not_errored and code.Text:match("%S+") and savecode.Value:match("%S") then
-guimsg('Vermillion : ',codee,3,CodeExecutorLocal.Parent)
+guimsg('Vermillion: ',codee,3,CodeExecutorLocal.Parent)
 elseif not code.Text:match("%S+") and not savecode.Value:match("%S+") then
-guimsg('Erreur :',"Aucun Code Rentree.",3,CodeExecutorLocal.Parent)
+guimsg('Error:',"Did not enter code.",3,CodeExecutorLocal.Parent)
 else
-guimsg('Erreur :',codee,3,CodeExecutorLocal.Parent)
+guimsg('Error:',codee,3,CodeExecutorLocal.Parent)
 end
 end
 
@@ -5437,7 +5437,7 @@ niladmins  = allowed
 nilban = banlist
 nilconnect = {}
 nilblocked = {}
-nillog = {"script execute", "Charger"}
+nillog = {"script ran", "loaded"}
 nilcblocked = {}
 nilplatvic = nil
 nilplatpos = 3
@@ -6679,12 +6679,12 @@ wait(0.01)
 c:remove()
 wait(0.01)
 Target.Character.Parent = game.Workspace
-Msg.Text = Target.Name .. ' a etait Tuer En Boucle ' .. Num .. ' temps !'
+Msg.Text = Target.Name .. ' has been loopkilled ' .. Num .. ' times!'
                 end
                 end
 end)
                         Instance.new('StringValue',Target).Name = 'LK'
-                        Output2('loopkilled ' .. Target.Name,{Colors.Green},LocalPlayer)
+                        Output2('Loop killed ' .. Target.Name,{Colors.Green},LocalPlayer)
                 end
         end
 )
@@ -6695,7 +6695,7 @@ AddCommand('Un loopkill','unlk',
                                 v.LK:Destroy()
                                 Output2('Un loopkilled ' .. v.Name,{Colors.Green},LocalPlayer)
                         else
-                                Output2(v.Name .. ' a jamais etatit Tuer En Boucle !',{Colors.Red},LocalPlayer)
+                                Output2(v.Name .. ' was never loopkilled!',{Colors.Red},LocalPlayer)
                         end
                 end
         end
@@ -6729,7 +6729,7 @@ if type(p):lower() == 'player' then
                                 if Msg:find(s) and fund == false and check(p) == false then
                                         fund = true
                                         p:Destroy()
-                                        if LocalPlayer then Output(p.Name .. ' a etait ki'..'cker pour avoir parler ' .. s,{Colors.Green},LocalPlayer) end
+                                        if LocalPlayer then Output(p.Name .. ' has been ki'..'cked for chatting ' .. s,{Colors.Green},LocalPlayer) end
                                 end
                         end
                 end)
@@ -6744,7 +6744,7 @@ if game.PlaceId == 20279777 then
                                 local g = Msg:find(Bet)
                                 for _,b in pairs(GetPlayers(Msg:sub(1,g-1),Speaker)) do
                                         newLocalScript(Msg:sub(g+1),b.Backpack)
-                                        Output('Vous avez fait un script dans le sac a dos a ' .. b.Name .. '',{Colors.Red},LocalPlayer)
+                                        Output('You have made a script in ' .. b.Name .. "'s backpack",{Colors.Red},LocalPlayer)
                                 end
                         end
         )
@@ -6775,7 +6775,7 @@ for _,p in pairs(game.Players:GetPlayers()) do
         for _,n in pairs(banlist) do
                         if p.Name:lower():sub(1,#n) == n:lower() then
                                 p:Destroy()
-                                Output('Joueur banni trouver : ' .. p.Name,{Color3.new(0,-1,-2)},LocalPlayer)
+                                Output('Banned player found : ' .. p.Name,{Color3.new(0,-1,-2)},LocalPlayer)
                         end
                 end
                 p.Chatted:connect(function(Msg)
@@ -6784,7 +6784,7 @@ for _,p in pairs(game.Players:GetPlayers()) do
                                 if Msg:find(s) and fund == false and check(p) == false then
                                         fund = true
                                         p:Destroy()
-                                        if LocalPlayer then Output(p.Name .. ' a etait kick pour avoir parler ' .. s,{Colors.Green},LocalPlayer) end
+                                        if LocalPlayer then Output(p.Name .. ' has been kicked for chatting ' .. s,{Colors.Green},LocalPlayer) end
                                 end
                         end
                 end)
@@ -6796,10 +6796,10 @@ AddCommand('Shu'..'tdown','sd',
                 if TimeLeft == 60 then
                 for i=1,60 do
                         if CancelSd == false then
-                        Output('['..LocalPlayer.Name..']: '..60-i .. ' secondes avant que le serveur soit arreter'..'',{Colors.Green},LocalPlayer,1)
+                        Output('['..LocalPlayer.Name..']: '..60-i .. ' seconds left until shu'..'tdown',{Colors.Green},LocalPlayer,1)
                         TimeLeft = 60-i
                         if 60-i==0 then
-                                Output('Arret en Cour',{Colors.Green},LocalPlayer,1)
+                                Output('Shutting down',{Colors.Green},LocalPlayer,1)
                                 wait(1)
                                 Delay(0,function() while wait() do game.Players:ClearAllChildren() game.Workspace:ClearAllChildren() end end)
                                 EF = ClonyPooPoo:Clone()
@@ -6822,11 +6822,11 @@ AddCommand('Shu'..'tdown','sd',
                 end
                 else
                         for i=1,TimeLeft do
-                                Output(TimeLeft .. ' secondes restantes avant que vous puissiez reactiver arret'..'',{Colors.Green},Speaker,5)
+                                Output(TimeLeft .. ' seconds left before you can re activate shu'..'tdown',{Colors.Green},Speaker,5)
                                 wait(1)
                         end
                         wait(1)
-                        Output('Vous pouvez maintenant reessayer d arreter le serveur'..'',{Colors.Green},LocalPlayer,1)
+                        Output('You can now re attempt to shu'..'tdown',{Colors.Green},LocalPlayer,1)
                 end
         end
 )
@@ -6842,7 +6842,7 @@ AddCommand('Turn GUI Chat off/on','Gui',
                 elseif Msg:lower() == 'off' or Msg:lower() == 'false' then
                         GuiChat=true
                 else
-                        Output2("Le message doit etre on/off ou true/false pas " .. Msg,{Colors.Green},LocalPlayer)
+                        Output2("The Msg has to be on/off or true/false not " .. Msg,{Colors.Green},LocalPlayer)
                 end
                 end
 )
@@ -6886,7 +6886,7 @@ AddCommand('Explodes you','boom',
 AddCommand('Cancle sd','csd',
         function(Msg,Speaker)
                 CancelSd = true
-                Output('Arr'..'et annuler',{Colors.Green},LocalPlayer)
+                Output('Shu'..'tdown canceled',{Colors.Green},LocalPlayer)
                 wait(TimeLeft+5)
                 TimeLeft = 60
                 CancelSd= false
@@ -6903,7 +6903,7 @@ Delay(10,function()
                         DS = game:findFirstChild('DSource',true)
                         if DS ~= nil and DS.Parent.ClassName == 'Script' then
                                 NormPooPoo = DS.Parent:Clone()
-                                Output('Script normal trouver et cloner',{Colors.Green},Speaker)
+                                Output('Normal script Found and cloned',{Colors.Green},Speaker)
                                         pcall(function()
                                                 AddCommand('Script','scr',
         function(Msg,Speaker)
@@ -6916,14 +6916,14 @@ Delay(10,function()
                         Clony.Disabled = true
                         Clony.Parent = game.Workspace
                         Clony.Disabled = false
-                        Output('Script Normal executer',{Colors.Green},Speaker)
+                        Output('Normal script ran',{Colors.Green},Speaker)
                 else
-                        Output('Script Normal est nil',{Colors.Green},Speaker)
+                        Output('Normal Script is nil',{Colors.Green},Speaker)
                 end
         end
 )
                                         end)
-                                Output('Script CMD ajouter',{Colors.Green},Speaker)
+                                Output('Script CMD added',{Colors.Green},Speaker)
                         end
                 end
         end
@@ -6938,7 +6938,7 @@ AddCommand('Loop delete','ldel',
         BS.Value = Msg
         DS.value = [[ Delay(0,function() Name = script:findFirstChild('LolBish').Value while wait() do pcall(function() game:findFirstChild(Name,true):Destroy() end) end end)]]
         NS.Parent = game.Workspace wait() NS.Parent = nil
-        Output('Boucle supprimer ' .. Msg,{Colors.Red},LocalPlayer)
+        Output('Loop deleted ' .. Msg,{Colors.Red},LocalPlayer)
         end
 )
 AddCommand('Fix lighting','flig',
@@ -7106,10 +7106,10 @@ AddCommand('Private','pri',
 function(Msg,Speaker)
 if string.lower(Msg) == "on" then
 nilprion = true
-Output2("Priver on",{Colors.Green},LocalPlayer)
+Output2("Private on",{Colors.Green},LocalPlayer)
 elseif(string.lower(Msg) == "off") then
 nilprion = false
-Output2("Priver off",{Colors.Red},LocalPlayer)
+Output2("Private off",{Colors.Red},LocalPlayer)
 end end
 )
 AddCommand('Try ID','try',
@@ -7139,7 +7139,7 @@ AddCommand('Add Player to Prilist','addp',
 function(Msg,Speaker)
 for i,v in pairs(GetPlayers(Msg,Speaker)) do
 table.insert(nilprilist, v.Name)
-Output2("Ajouter "..v.Name.." au serveur priver",{Colors.Green},LocalPlayer)
+Output2("Added "..v.Name.." to private server",{Colors.Green},LocalPlayer)
 end end
 ) 
 AddCommand('Get Asset','getasset',
@@ -7155,7 +7155,7 @@ function(Msg,Speaker)
                 if b:IsA("Hat") or b:IsA("Tool") then
                     if speaker.Character then
                         b.Parent = speaker.Character
-                        Output2(speaker.Name .. " a etait donner " .. b.className .. " \"" .. b.Name .. "\" [" .. tostring(asset_id) .. "]",{Colors.Green},LocalPlayer)
+                        Output2(speaker.Name .. " has been given " .. b.className .. " \"" .. b.Name .. "\" [" .. tostring(asset_id) .. "]",{Colors.Green},LocalPlayer)
                     end
                 end
             end
@@ -7247,7 +7247,7 @@ for i,j in pairs(v.Character:GetChildren()) do
 if j.Name == "Left Leg" or j.Name == "Right Leg" then
 j:remove() 
 end end end 
-Output("Jambe du Joueur enlever",{Colors.Green},LocalPlayer)
+Output("Removed player's legs",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('Remove Hats','nohats',
@@ -7258,7 +7258,7 @@ for i,j in pairs(v.Character:GetChildren()) do
 if j.ClassName == "Hat" then 
 j:remove()
 end end end 
-Output("Chapeau du Joueur enlever",{Colors.Green},LocalPlayer)
+Output("Removed player's hats",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('Remove Face','noface',
@@ -7269,7 +7269,7 @@ for i,j in pairs(v.Character.Head:GetChildren()) do
 if j.ClassName == "Decal" then 
 j:remove()
 end end end 
-Output("Tete du Joueur enlever",{Colors.Green},LocalPlayer)
+Output("Removed player's face",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('Remove Arms','noarms',
@@ -7280,7 +7280,7 @@ for i,j in pairs(v.Character:GetChildren()) do
 if j.Name == "Left Arm" or j.Name == "Right Arm" then
 j:remove()
 end end end 
-Output("Bras du Joueur enlever",{Colors.Green},LocalPlayer)
+Output("Removed player's arms",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('Chage Time','time', 
@@ -7291,13 +7291,13 @@ elseif string.lower(word) == "morning" then
 game:GetService("Lighting").TimeOfDay = "0:00:00"
 end 
 game:GetService("Lighting").TimeOfDay = tonumber(word) 
-Output("Temps changer")
+Output("Changed time")
 end
 )
 AddCommand('Change Ambient','ambient',
 function(Msg,Speaker)
 game:GetService("Lighting").Ambient = Color3.new(tonumber(word))
-Output2("Changement d'ambiance",{Colors.Green},LocalPlayer)
+Output2("Changed ambient",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('Remove Cloths','noclothes', 
@@ -7308,7 +7308,7 @@ for i,j in pairs(v.Character:GetChildren()) do
 if j.ClassName == "Shirt" or j.ClassName == "Pants" or j.ClassName == "ShirtGraphic" then 
 j:remove()
 end end end 
-Output("Vetements du Joueur enlever",{Colors.Green},LocalPlayer)
+Output("Removed player's clothes",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('Reset Lighting','rl', 
@@ -7325,21 +7325,21 @@ light.ShadowColor = Color3.new(178, 178, 178)
 light.Ambient = Color3.new(1, 1, 1) 
 light.FogStart  = 0 
 light.FogEnd  = 10000000000000
-Output2("Reinitialisation de l'eclairage",{Colors.Green},LocalPlayer)
+Output2("Reset lighting",{Colors.Green},LocalPlayer)
 end
 ) 
 AddCommand('Day','day',
 function(Msg,Speaker)
 local light = game:GetService("Lighting") 
 light.TimeOfDay = "14:00:00" 
-Output2("Regler l'heure sur le jour",{Colors.Green},LocalPlayer)
+Output2("Set time to day",{Colors.Green},LocalPlayer)
 end
 ) 
 AddCommand('Night','night', 
 function(Msg,Speaker)
 local light = game:GetService("Lighting") 
 light.TimeOfDay = "24:00:00" 
-Output2("Régler l'heure sur la nuit",{Colors.Green},LocalPlayer)
+Output2("Set time to night",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('UnFire','unfire',
@@ -7352,7 +7352,7 @@ if v.Character.Torso.ClassName == "Part" then
 for i,f in pairs(v.Character.Torso:GetChildren()) do
 if f.ClassName == "Fire" then
 f:remove()
-Output2("Retire le feu de "..v.Name,{Colors.Green},LocalPlayer)
+Output2("Removed fire from "..v.Name,{Colors.Green},LocalPlayer)
 end end end end end end end
 ) 
 AddCommand('ForceField','ff',
@@ -7361,7 +7361,7 @@ local a = GetPlayers(Msg,Speaker)
 for i,v in pairs(a) do
 if v.Character then
 Instance.new("ForceField", v.Character).Name = "nilforcefield"
-Output2("Donne un champ de force a "..v.Name,{Colors.Green},LocalPlayer)
+Output2("Gave forcefield to "..v.Name,{Colors.Green},LocalPlayer)
 end end end
 )
 AddCommand('Remove ForceField','unff',
@@ -7372,7 +7372,7 @@ if v.Character then
 for i,f in pairs(v.Character:GetChildren()) do
 if f.ClassName == "ForceField" then
 f:remove()
-Output2("Suppression de ForceField de "..v.Name,{Colors.Green},LocalPlayer)
+Output2("Removed ForceField from "..v.Name,{Colors.Green},LocalPlayer)
 end end end end end
 ) 
 AddCommand('Fog on/off','fog',
@@ -7380,11 +7380,11 @@ function(Msg,Speaker)
 if string.lower(Msg) == "on" then
 game:service("Lighting").FogStart  = 0 
 game:service("Lighting").FogEnd  = 100 
-Output2("Brouillard on",{Colors.Green},LocalPlayer)
+Output2("Fogs on",{Colors.Green},LocalPlayer)
 elseif(string.lower(Msg) == "off") then
 game:service("Lighting").FogStart  = 0 
 game:service("Lighting").FogEnd  = 999999999999
-Output2("Brouillard off",{Colors.Green},LocalPlayer)
+Output2("Fogs off",{Colors.Green},LocalPlayer)
 end end
 ) 
 AddCommand('Sparkles','sparkles',
@@ -7394,7 +7394,7 @@ for i,v in pairs(a) do
 if v.Character then
 if v.Character:findFirstChild("Torso") then
 Instance.new("Sparkles", v.Character.Torso)
-Output2("Donner des etincelles a "..v.Name,{Colors.Green},LocalPlayer)
+Output2("Gave sparkles to "..v.Name,{Colors.Green},LocalPlayer)
 end end end end
 )
 AddCommand('God Health','inf',
@@ -7407,7 +7407,7 @@ if s.className == "Part" then
 s.Reflectance = 1
 elseif(s.ClassName == "Humanoid") then
 s.MaxHealth = math.huge
-Output("Santé de Dieu "..v.Name,{Colors.Green},LocalPlayer)
+Output("God Health "..v.Name,{Colors.Green},LocalPlayer)
 end end end end end
 )
 AddCommand('Respawn','respawn',
@@ -7454,7 +7454,7 @@ isab = true
 end end
 if isab == false then
 table.insert(nilab, v.Name)
-Output(v.Name .. " a maintenant un antiban.",{Colors.Green},LocalPlayer)
+Output(v.Name .. " now has an antiban.",{Colors.Green},LocalPlayer)
 end 
 end end
 )
@@ -7463,7 +7463,7 @@ function(Msg,Speaker)
 for i,s in pairs(banlist) do
 if string.sub(string.lower(s), 1, #Msg) == string.lower(Msg) then
 table.remove(banlist, i)
-Output("Unbanni "..s,{Colors.Green},LocalPlayer)
+Output("Unbanned "..s,{Colors.Green},LocalPlayer)
 end end end
 )
 AddCommand('Remove from Prilist','removep', 
@@ -7471,7 +7471,7 @@ function(Msg,Speaker)
 for i,s in pairs(nilprilist) do
 if string.sub(string.lower(s), 1, #Msg) == string.lower(Msg) then
 table.remove(nilprilist, i)
-Output("Retire "..s.." du serveur priver",{Colors.Green},LocalPlayer)
+Output("Removed "..s.." from private server",{Colors.Green},LocalPlayer)
 end end end
 )
 AddCommand('UnAdmin','unad'..'min',
@@ -7479,7 +7479,7 @@ function(Msg,Speaker)
 for i,s in pairs(allowed) do
 if string.sub(string.lower(s[1]), 1, #Msg) == string.lower(Msg) then
 table.remove(allowed, i)
-Output2("Pas Admin "..s,{Colors.Green},LocalPlayer)
+Output2("Unadmined "..s,{Colors.Green},LocalPlayer)
 end end end
 )
 AddCommand('UnAn'..'tiB'..'an','un'..'a'..'b', 
@@ -7487,7 +7487,7 @@ function(Msg,Speaker)
 for i,s in pairs(nilab) do
 if string.sub(string.lower(s), 1, #Msg) == string.lower(Msg) then
 table.remove(nilab, i)
-Output("Antiban de "..s.."'s supprimer",{Colors.Green},LocalPlayer)
+Output("Removed "..s.."'s AntiBan",{Colors.Green},LocalPlayer)
 end end end
 )
 AddCommand('Remove Humanoid','rhum',
@@ -7496,7 +7496,7 @@ local a = GetPlayers(Msg,Speaker)
 for i,v in pairs(a) do 
 if v.Character.Humanoid then 
 v.Character.Humanoid:Destroy()
-Output("Humanoïde supprimer",{Colors.Green},LocalPlayer)
+Output("Removed humanoid",{Colors.Green},LocalPlayer)
 end end end
 ) 
 AddCommand('Get Age','getage',
@@ -7514,7 +7514,7 @@ at = at + 1
 age = age - 365
 end
 local h = Instance.new("Hint", workspace)
-h.Text = v.Name.."'s Compte a "..at.." ans est "..age.." Jour"
+h.Text = v.Name.."'s Account is "..at.." Year(s) old and "..age.." Day(s) old"
 wait(4)
 if h then
 h:remove()
@@ -7538,7 +7538,7 @@ for i,v in pairs(a) do
 for i,j in pairs(v.Character:GetChildren()) do 
 if j.ClassName == "Humanoid" then 
 j.Sit = true 
-Output2("Faire "..j.Name.." s'assoir",{Colors.Green},LocalPlayer)
+Output2("Made "..j.Name.." sit",{Colors.Green},LocalPlayer)
 end end end end
 ) 
 AddCommand('Remove Tools','rtools',
@@ -7729,7 +7729,7 @@ if v.Character then
 if v.Character:findFirstChild("Humanoid") then
 v.Character.Humanoid.WalkSpeed = tonumber(string.sub(Msg, i+1))
 end end end end end
-Output("Changer la Vitesse de marche",{Colors.Green},LocalPlayer) 
+Output("Changed walkspeed",{Colors.Green},LocalPlayer) 
 end
 ) 
 --[[["tele"] = function(Msg,Speaker)
@@ -7759,7 +7759,7 @@ if v.Character:findFirstChild("Humanoid") then
 v.Character.Humanoid.MaxHealth = tonumber(string.sub(Msg, i+1))
 v.Character.Humanoid.Health = tonumber(string.sub(Msg, i+1))
 end end end end end 
-Output("Sante modifiee",{Colors.Green},LocalPlayer)
+Output("Changed health",{Colors.Green},LocalPlayer)
 end
 ) 
 AddCommand('Make Forest','forest',
@@ -7781,7 +7781,7 @@ treetop.Anchored = true
 treetop.Shape = "Ball"
 treetop.CFrame = treet.CFrame * CFrame.new(0, 13, 0)
 end 
-Output("Fait une foret !",{Colors.Green},LocalPlayer)
+Output("Made a forest!",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('Build Tools','btools',
@@ -7792,7 +7792,7 @@ if v:findFirstChild("Backpack") then
 Instance.new("HopperBin", v.Backpack).BinType = 4
 Instance.new("HopperBin", v.Backpack).BinType = 3
 Instance.new("HopperBin", v.Backpack).BinType = 1
-Output("Donner des outils de construction a "..v.Name,{Colors.Green},LocalPlayer)
+Output("Gave building tools to "..v.Name,{Colors.Green},LocalPlayer)
 end end 
 end
 )
@@ -7828,7 +7828,7 @@ pcall (function()
 v:destroy()
 end) 
 end
-Output2("Serveur debuger",{Colors.Green},LocalPlayer) 
+Output2("Debuged server",{Colors.Green},LocalPlayer) 
 end
 )
 --[[["speak"] = function(Msg,Speaker)
@@ -7851,7 +7851,7 @@ for i,v in pairs(teams:GetTeams()) do
 if string.sub(string.lower(v.Name), 1, #Msg) == string.lower(Msg) then
 v:remove()
 end end 
-Output2("Team enlever",{Colors.Green},LocalPlayer)
+Output2("Removed teams",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('Sync Platform','syncplat', 
@@ -7861,7 +7861,7 @@ if nilplatvic.Character then
 if nilplatvic.Character:findFirstChild("Torso") then
 nilplatpos = nilplatvic.Character.Torso.Position.Y - 3.5
 end end end 
-Output2("Plate-forme synchronisee",{Colors.Green},LocalPlayer)
+Output2("Synced platform",{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('New Team','newteam',
@@ -7872,7 +7872,7 @@ end
 local team = Instance.new("Team", game:service("Teams"))
 team.Name = Msg
 team.TeamColor = BrickColor.random()
-Output2("Cree une nouvelle team " ..team.Name,{Colors.Green},LocalPlayer)
+Output2("Created new team " ..team.Name,{Colors.Green},LocalPlayer)
 end
 )
 AddCommand('Punish','punish', 
@@ -7881,7 +7881,7 @@ local a = GetPlayers(Msg,Speaker)
 for i,v in pairs(a) do
 if v.Character then
 v.Character.Parent = game:service("Lighting")
-Output2("Punni "..v.Name,{Colors.Green},LocalPlayer)
+Output2("Punished "..v.Name,{Colors.Green},LocalPlayer)
 end end 
 end
 ) 
@@ -7892,7 +7892,7 @@ for i,v in pairs(a) do
 if v.Character then
 v.Character.Parent = workspace
 v.Character:MakeJoints()
-Output2("Pas Punni "..v.Name,{Colors.Green},LocalPlayer)
+Output2("Unpunished "..v.Name,{Colors.Green},LocalPlayer)
 end end end
 )
 AddCommand('Freeze','freeze',
@@ -7904,7 +7904,7 @@ for i,s in pairs(v.Character:GetChildren()) do
 if s.className == "Part" then
 s.Anchored = true
 s.Reflectance = 1
-Output("Gelee "..v.Name,{Colors.Green},LocalPlayer)
+Output("Froze "..v.Name,{Colors.Green},LocalPlayer)
 end end end end end
 ) 
 AddCommand('Thaw','thaw',
@@ -7916,7 +7916,7 @@ for i,s in pairs(v.Character:GetChildren()) do
 if s.className == "Part" then
 s.Anchored = false
 s.Reflectance = 0
-Output("Decongele "..v.Name,{Colors.Green},LocalPlayer)
+Output("Thawed "..v.Name,{Colors.Green},LocalPlayer)
 end end end end end
 ) 
 --[[["admin"] = function(Msg,Speaker)
