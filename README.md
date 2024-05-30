@@ -1,13 +1,13 @@
 # Scripts
 
-[1x1x1x1 Gui](https://raw.githubusercontent.com/LeBazarDeBryan/RBX_Scripts/main/1x1x1x1%20Gui.lua)
+[1x1x1x1 Gui](1x1x1x1%20Gui.lua?raw=true)
 
-[C00lgui](https://raw.githubusercontent.com/LeBazarDeBryan/RBX_Scripts/main/C00lgui.lua)
+[C00lgui](C00lgui.lua?raw=true)
 
-[CMD-X](https://raw.githubusercontent.com/LeBazarDeBryan/RBX_Scripts/main/CMD-X.lua)
+[CMD-X](CMD-X.lua?raw=true)
 
-[Infinite Yield](https://raw.githubusercontent.com/LeBazarDeBryan/RBX_Scripts/main/Infinite%20Yield.lua)
+[Infinite Yield](Infinite%20Yield.lua?raw=true)
 
-[Reviz](https://raw.githubusercontent.com/LeBazarDeBryan/RBX_Scripts/main/Reviz.lua)
+[Reviz](Reviz.lua?raw=true)
 
-[Tubers93 Admin](https://raw.githubusercontent.com/N0ub4x/LeBazarDeBryan/main/Tubers93%20Admin.lua)
+[Tubers93 Admin](Tubers93%20Admin.lua?raw=true)
